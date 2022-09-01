@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd 
 import seaborn as sns 
 import db 
+import db 
 
 with open('model.pkl','rb') as f:
     model = pickle.load(f)
