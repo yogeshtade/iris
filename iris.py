@@ -39,7 +39,7 @@ def predict():
     if result[0] == 2:
         pred = 'Iris-virginica'
        
-    return jsonify(pred)
+    return render_template("iris_data.html",prediction  = pred)
 
 
     # 5.1	3.5	1.4	0.2	
@@ -47,4 +47,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port='8080')
